@@ -12,7 +12,7 @@ Provides angular bootstrap project.
 
 ## Getting started
 
-    git clone git@github.com:robinComa/angular-scaffolding.git
+    git clone https://github.com/robinComa/angular-scaffolding.git
     cd angular-scaffolding
     npm install
     bower install
