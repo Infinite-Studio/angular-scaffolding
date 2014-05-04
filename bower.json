@@ -1,0 +1,30 @@
+{
+  "name": "sqli-angular",
+  "private": true,
+  "dependencies": {
+      "modernizr": "latest",
+      "jquery": "latest",
+      "json3": "latest",
+      "es5-shim": "latest",
+      "respond": "latest",
+      "bootstrap-sass": "twbs/bootstrap-sass#~3.1.0",
+      "angular": "latest",
+      "angular-strap": "latest",
+      "angular-resource": "latest",
+      "angular-mocks": "latest",
+      "angular-ui-router": "latest",
+      "angular-translate": "latest",
+      "angular-translate-loader-static-files": "latest",
+      "angular-translate-loader-url": "latest",
+      "angular-translate-loader-partial": "latest",
+      "angular-animate": "latest",
+      "animate.css": "latest",
+      "data-table": "https://datatables.net/releases/DataTables-1.9.4.zip"
+  },
+  "devDependencies": {
+
+  },
+  "resolutions": {
+    "angular-translate": "~2.1.0"
+  }
+}

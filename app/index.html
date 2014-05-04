@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>App Title</title>
+
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+
+        <link rel="stylesheet" href="vendor/DataTables-1.9.4/media/css/jquery.dataTables.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="appMock">
+        <!--[if lt IE 9]>
+        <!-- build:js scripts/vendor-ie8-shim.js -->
+            <script src="bower_components/es5-shim/es5-shim.min.js"></script>
+            <script src="bower_components/json3/lib/json3.min.js"></script>
+            <script src="bower_components/respond/dest/respond.min.js"></script>
+        <!-- endbuild -->
+        <![endif]-->
+
+        <!-- loading animation -->
+        <div id="loading" ng-if="!ready">
+            <h3 class="text-center">Loading...</h3>
+            <div class="progress progress-striped active">
+                <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" ui-view></div>
+
+        <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="bower_components/bootstrap-sass/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-strap/dist/angular-strap.js"></script>
+        <script src="bower_components/angular-strap/dist/angular-strap.tpl.js"></script>
+        <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="bower_components/angular-translate/angular-translate.js"></script>
+        <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+        <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+        <script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+
+        <script src="vendor/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="src/modules/app-notification/module.js"></script>
+        <script src="src/modules/app-security/module.js"></script>
+        <script src="src/modules/app-dialog/module.js"></script>
+        <script src="src/modules/app-interceptor/module.js"></script>
+        <script src="src/modules/app-resource/module.js"></script>
+        <script src="src/modules/app-table/module.js"></script>
+
+        <script src="src/appMock.js"></script>
+
+        <script src="src/app.js"></script>
+        <script src="src/resources/factory.js"></script>
+        <script src="src/resources/models/book.js"></script>
+        <script src="src/resources/models/user.js"></script>
+        <script src="src/main/menu/directive.js"></script>
+        <script src="src/main/content/home/routes.js"></script>
+        <script src="src/main/content/home/controller.js"></script>
+        <script src="src/main/content/book/routes.js"></script>
+        <script src="src/main/content/book/controllerList.js"></script>
+        <script src="src/main/content/book/controllerView.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/templates.js -->
+
+        <!-- endbuild -->
+
+</body>
+</html>

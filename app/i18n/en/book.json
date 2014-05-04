@@ -1,0 +1,20 @@
+{
+    "book.form.title": "Add Book",
+    "book.update.btn": "Update",
+    "book.delete.btn": "Delete",
+    "book.add.btn": "Add a book",
+    "book.form.title.label": "Title",
+    "book.form.title.placeholder": "The title of the book",
+    "book.form.title.error": "Enter a title",
+    "book.form.description.label": "Description",
+    "book.form.description.placeholder": "A description of the book",
+    "book.form.description.error": "Enter a description",
+    "book.form.success.title": "The book was saved correctly",
+    "book.form.success.description": "",
+    "book.form.error.title": "The form was not saved correctly",
+    "book.form.error.description": "",
+    "book.delete.confirmation.title": "Delete a book",
+    "book.delete.confirmation.content": "Are you sure to delete \"{{title}}\"?",
+    "book.deleted.success.title": "The book was deleted correctly",
+    "book.deleted.success.content": ""
+}

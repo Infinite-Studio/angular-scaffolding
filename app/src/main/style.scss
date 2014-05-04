@@ -1,0 +1,11 @@
+$icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+// endbower
+
+@import "main";
+@import "fix-chameleon";
+@import "animation";
+@import "../modules/app-dialog/style";
+@import "../modules/app-notification/style";

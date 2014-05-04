@@ -1,0 +1,13 @@
+[{
+    "id": 1,
+    "title": "Super book",
+    "description": "The book description..."
+},{
+    "id": 2,
+    "title": "Super book 2",
+    "description": "The book 2 description..."
+},{
+    "id": 3,
+    "title": "Super book 3",
+    "description": "The book 3 description..."
+}]

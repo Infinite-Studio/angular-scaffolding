@@ -1,0 +1,12 @@
+<input ng-model="book.id" type="hidden"/>
+
+<div class="form-group" ng-class="{'has-success': form.bookTitle.$valid, 'has-error': !form.bookTitle.$valid && submitted}">
+    <label for="bookTitle">{{'book.form.title.label' | translate}}</label>
+    <input ng-model="book.title" name="bookTitle" required="required" class="form-control" id="bookTitle" placeholder="{{'book.form.title.placeholder' | translate}}"/>
+    <p class="help-block" ng-hide="form.bookTitle.$valid || !submitted">{{'book.form.title.error' | translate}}</p>
+</div>
+<div class="form-group" ng-class="{'has-success': form.bookDescription.$valid, 'has-error': !form.bookDescription.$valid && submitted}">
+    <label for="bookDescription">{{'book.form.description.label' | translate}}</label>
+    <textarea ng-model="book.description" name="bookDescription" required="required" class="form-control" id="bookDescription" placeholder="{{'book.form.description.placeholder' | translate}}"></textarea>
+    <p class="help-block" ng-hide="form.bookDescription.$valid || !submitted">{{'book.form.description.error' | translate}}</p>
+</div>

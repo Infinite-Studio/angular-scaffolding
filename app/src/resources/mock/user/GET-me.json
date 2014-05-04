@@ -1,0 +1,9 @@
+{
+    "firstName": "Robin",
+    "lastName": "Coma Delperier",
+    "email": "rcomadelperier@sqli.com",
+    "roles": [
+        "admin",
+        "expert"
+    ]
+}

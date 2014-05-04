@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.7 (Linux)" package="unit" timestamp="2014-04-29T23:14:50" id="0" hostname="robin-VPCS11C5E" tests="1" errors="1" failures="1" time="0.02">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34"/>
+    </properties>
+    <testcase name="#REQ-BOOK-001 : A book should have a get resume function" time="0.02" classname="unit PhantomJS 1.9.7 (Linux).UNIT: Book Model">
+      <failure type="">Error: [$injector:unpr] http://errors.angularjs.org/1.2.16/$injector/unpr?p0=BookProvider%20%3C-%20Book
+    at /home/robin/WebstormProjects/sqli-angular/app/bower_components/angular/angular.min.js:35
+    at c (/home/robin/WebstormProjects/sqli-angular/app/bower_components/angular/angular.min.js:34)
+    at /home/robin/WebstormProjects/sqli-angular/app/bower_components/angular/angular.min.js:36
+    at c (/home/robin/WebstormProjects/sqli-angular/app/bower_components/angular/angular.min.js:34)
+    at d (/home/robin/WebstormProjects/sqli-angular/app/bower_components/angular/angular.min.js:34)
+    at workFn (/home/robin/WebstormProjects/sqli-angular/app/bower_components/angular-mocks/angular-mocks.js:2147)
+undefined
+</failure>
+    </testcase>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
