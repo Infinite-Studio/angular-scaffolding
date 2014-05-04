@@ -25,4 +25,6 @@ dist
 .sass-cache
 app/bower_components
 test/bower_components
+test/e2e.xml
+test/unit.xml
 app/style.css
