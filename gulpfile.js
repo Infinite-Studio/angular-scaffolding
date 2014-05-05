@@ -6,7 +6,6 @@ var open = require('open');
 // Load plugins
 var $ = require('gulp-load-plugins')();
 
-
 // Styles
 gulp.task('styles', function () {
     return gulp.src('app/src/main/style.scss')
@@ -17,7 +16,7 @@ gulp.task('styles', function () {
 });
 
 // Copy
-gulp.task('copy', function(){
+gulp.task('copy', ['clean'], function(){
     return gulp.src([
         'app/index.html',
         'app/robots.txt',
@@ -50,14 +49,27 @@ gulp.task('html', ['styles'], function () {
         .pipe(gulp.dest('dist'));
 });
 
-
 // Clean
 gulp.task('clean', function () {
     return gulp.src(['dist'], { read: false }).pipe($.clean());
 });
 
 // Build
-gulp.task('dist', ['clean', 'copy', 'template']);
+gulp.task('dist', ['copy', 'template'], function(){
+    return gulp.src([
+            'dist/**/*.js',
+            'dist/**/*.css'
+        ])
+        .pipe($.manifest({
+            hash: true,
+            preferOnline: true,
+            network: ['http://*', 'https://*', '*'],
+            filename: 'app.manifest',
+            exclude: 'app.manifest'
+        }))
+        .pipe($.replace(/%5C/g, '\/'))// Bug into manifest plugin 0.0.4
+        .pipe(gulp.dest('dist'));
+});
 
 // Default task
 gulp.task('default', ['serve']);
